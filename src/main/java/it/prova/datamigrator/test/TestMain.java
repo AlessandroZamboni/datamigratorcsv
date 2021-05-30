@@ -8,27 +8,26 @@ import com.opencsv.exceptions.CsvException;
 import it.prova.datamigrator.model.Assicurato;
 import it.prova.datamigrator.service.DataMigratorService;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Date;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class TestMain {
 
     public static void main(String[] args) throws IOException, CsvException {
-   /*     DataMigratorService dataMigratorServiceInstance = new DataMigratorService();
+      DataMigratorService dataMigratorServiceInstance = new DataMigratorService();
 
         try {
             dataMigratorServiceInstance.dataMigrator();
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
 
         //################# CSV READER TEST ##############
-        String fileName = "C:\\Users\\Alessandro\\Desktop\\filesinput\\assicurato.csv";
+     /*     String fileName = "C:\\Users\\Alessandro\\Desktop\\filesinput\\assicurato.csv";
         CSVParser csvParser = new CSVParserBuilder().withSeparator(',').withIgnoreQuotations(true).build(); // custom separator
         try(CSVReader reader = new CSVReaderBuilder(
                 new FileReader(fileName))
@@ -41,6 +40,7 @@ public class TestMain {
             List<String[]> r = reader.readAll();
           //  r.forEach(x -> System.out.println(Arrays.toString(x)));
             r.stream().flatMap(Arrays::stream).forEach(System.out::println);
+
 
             System.out.println("\n########## FINE ESTRAZIONE #########\n");
 
@@ -57,11 +57,8 @@ public class TestMain {
 
                 System.out.println("ASSICURATO COSTRUITO: "+assicurato);
 
-            }
+            }*/
 
         }
 
-
-
-    }
 }
